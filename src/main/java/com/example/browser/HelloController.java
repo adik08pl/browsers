@@ -1,14 +1,23 @@
 package com.example.browser;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.web.WebView;
 
 public class HelloController {
     @FXML
-    private Label welcomeText;
+    private WebView webView;
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    public void btnOnet(ActionEvent actionEvent) {
+        webView.getEngine().load("https://onet.pl");
+    }
+    public void btnWP(ActionEvent actionEvent) {
+        webView.getEngine().load("https://wp.pl");
+    }
+    public void btnInteria(ActionEvent actionEvent) {
+        webView.getEngine().load("https://interia.pl");
+    }
+    public void btnGazeta(ActionEvent actionEvent) {
+        webView.getEngine().load("https://gazeta.pl");
     }
 }

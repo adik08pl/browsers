@@ -4,12 +4,12 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.web.WebView?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.browser.HelloController">
    <children>
-      <Button layoutX="43.0" layoutY="14.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="119.0" text="Button" />
-      <Button layoutX="241.0" layoutY="14.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="119.0" text="Button" />
-      <Button layoutX="432.0" layoutY="14.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="119.0" text="Button" />
-      <WebView layoutX="19.0" layoutY="131.0" prefHeight="235.0" prefWidth="563.0" />
+      <Button fx:id="btn1" layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnOnet" prefHeight="89.0" prefWidth="119.0" text="ONET" />
+      <Button layoutX="174.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnWP" prefHeight="89.0" prefWidth="119.0" text="WP" />
+      <Button layoutX="689.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnGazeta" prefHeight="89.0" prefWidth="119.0" text="GAZETA.PL" />
+      <WebView fx:id="webView" layoutX="19.0" layoutY="131.0" prefHeight="457.0" prefWidth="864.0" />
+      <Button layoutX="531.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnInteria" prefHeight="89.0" prefWidth="119.0" text="INTERIA" />
    </children>
 </Pane>
