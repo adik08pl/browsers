@@ -16,13 +16,16 @@ public class HelloController {
     public Button btn1;
     @FXML
     private WebView webView;
-
+    List<String> fileContent;
     @FXML
 void initialize(){
-       FileHelper.loadFileContent("C:/Users/Bob/Desktop");
+       fileContent = FileHelper.loadFileContent("C:/Users/Bob/Desktop");
+        System.out.println(fileContent.size());
+        if (fileContent == null)
+            return;
 }
     public void btn1clicked(ActionEvent actionEvent) {
-        webView.getEngine().load("https://interia.pl");
+        webView.getEngine().load(fileContent.get(0));
         btn1.setDisable(true);
         btn2.setDisable(false);
         btn3.setDisable(false);
