@@ -19,11 +19,10 @@ public class HelloController {
 
     @FXML
 void initialize(){
-        FileHelper.loadFileContent("C:/Users/Bob/Desktop");
+       FileHelper.loadFileContent("C:/Users/Bob/Desktop");
 }
     public void btn1clicked(ActionEvent actionEvent) {
-        FileHelper.loadFileContent("C:/Users/Bob/Desktop");
-        webView.getEngine().load();
+        webView.getEngine().load("https://interia.pl");
         btn1.setDisable(true);
         btn2.setDisable(false);
         btn3.setDisable(false);
